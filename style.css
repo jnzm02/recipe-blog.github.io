@@ -7,13 +7,193 @@ body {
     grid-template-rows: 100px 1fr 1fr;
 }
 
-.header {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+.content {
+    margin: 0 auto;
+    width: 969px;
 }
 
-footer {
-    margin-top: 162px;
+.header {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.header-title {
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 52px;
+}
+
+.header-content {
+    padding-top: 12px;
+    display: grid;
+    grid-template-columns: 13px auto;
+}
+
+.six-dots {
+    padding-top: 6px;
+    width: 13px;
+    height: 8px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 2px;
+}
+
+.dot {
+  height: 3px;
+  width: 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.header-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 12px;
+    max-width: 592px;
+}
+
+.main-photo {
+    padding-top: 17px;
+    width: 969px;
+    height: 470px;
+    position: relative;
+}
+
+.main-photo img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 969px;
+    height: 444px;
+}
+
+.zapparel {
+    padding-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 216px;
+}
+
+.ingredients-header {
+    padding-top: 48px;
+    font-family: "Playfair Display", Sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.ingredients-title {
+    padding-top: 32px;
+    font-size: 18px;
+    font-family: "Playfair Display", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.ingredients .items {
+    padding-top: 31px;
+}
+
+.ingredients .item {
+    padding-top: 12px;
+    display: grid;
+    grid-template-columns: 21px auto;
+}
+
+.item .checkbox {
+    width: 21px;
+    height: 21px;
+    border: 1px solid #828282;
+    border-radius: 4px;
+}
+
+.item .text {
+    line-height: 22px;
+    padding-left: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 535px;
+}
+
+.item .text .italic {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.instructions .header {
+    padding-top: 48px;
+    font-family: "Playfair Display", Sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.instructions .items {
+    padding-top: 31px;
+}
+
+.instructions .item {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 36px auto;
+}
+
+.item .number {
+    text-align: center;
+    background: #F2994A;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+}
+
+.source {
+    padding-top: 57px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #BDBDBD;
+}
+
+.menu {
+    padding: 24px 0;
+    width: 216px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.block {
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icon {
+    text-align: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 500
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
     font-family: 'Montserrat';
     margin: 0 auto;
     color: #A9A9A9;
@@ -22,7 +202,7 @@ footer {
 }
 
 
-footer a:link, footer a:visited, footer a:hover, footer a:active {
+.footer a:link, .footer a:visited, .footer a:hover, .footer a:active {
     text-decoration: underline;
     font-weight: bold;
     color:#A9A9A9;
