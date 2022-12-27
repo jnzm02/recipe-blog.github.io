@@ -44,6 +44,10 @@ html {
   display: inline-block;
 }
 
+.invis {
+    display: none;
+}
+
 .header-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -64,8 +68,8 @@ html {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 969px;
-    height: 444px;
+    width: 100%;
+    height: auto;
 }
 
 .zapparel {
@@ -222,4 +226,55 @@ img {
     text-decoration: underline;
     font-weight: bold;
     color:#A9A9A9;
+}
+
+@media (max-width: 481px) {
+    .content {
+        width: 100%;
+    }
+
+    .main-photo {
+        width: 100%;   
+        height: 210px; 
+    }
+
+    .header-title {
+        font-size: 24px;
+    }
+
+    .header-content {
+        font-size: 12px;
+    }
+
+    .zapparel {
+        display: block;
+    }
+    
+    .right {
+        padding-top: 24px;
+    }
+
+    .menu {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .invis {
+        display: inline;
+        height: 10px;
+    }
+
+    .source {
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    .note .description {
+        font-size: 10px;
+    }
+
+    .note .title {
+        font-size: 8px;
+    }
 }
