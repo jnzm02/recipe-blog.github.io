@@ -1,0 +1,29 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+footer {
+    margin-top: 162px;
+    font-family: 'Montserrat';
+    margin: 0 auto;
+    color: #A9A9A9;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+
+footer a:link, footer a:visited, footer a:hover, footer a:active {
+    text-decoration: underline;
+    font-weight: bold;
+    color:#A9A9A9;
+}
